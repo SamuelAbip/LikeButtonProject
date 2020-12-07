@@ -1,0 +1,96 @@
+.h1 {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+ @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+    .unliked {
+        padding: 10px;
+        width: 25%;
+        font-family:'Inconsolata', 'Helvetica', 'Arial',         sans-serif;
+        font-size: 70%;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-decoration:none;
+        border: 3px solid #3C14D0 ;
+        color: #3C14D0;
+}
+
+.liked {
+    padding: 10px;
+        width: 25%;
+        font-family:'Inconsolata', 'Helvetica', 'Arial',         sans-serif;
+        font-size: 70%;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-decoration:none;
+        border: 3px solid #68bad3;
+        color: #68bad3;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.card {
+  display: block;
+  width: 350px;
+  min-height: 90px;
+  border: 3px solid var(--primary);
+  padding: 10px;
+  margin: calc(15vh - 30px) auto 0 auto;
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+          20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 
+          30px -30px 0 -3px var(--background), 30px -30px var(--orange), 
+          40px -40px 0 -3px var(--background), 40px -40px var(--red); 
+  transition: box-shadow 1.5s, top 1.5s, left 1.5s;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.card:hover {
+  top: -40px;
+  left: 40px;
+  box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+      0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+      0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+      0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+}
+
+:root {
+  --primary: #555BFF;
+  --secondary: #22D2A0;
+  --background: white;
+  --green: #1FC11B;
+  --yellow: #FFD913;
+  --orange: #FF9C55;
+  --red: #FF5555;
+} 
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: radial-gradient(var(--secondary) 30%, var(--background) 30%);
+  background-size: 2px 3px;
+  font-family: "Archivo", sans-serif;
+  color: var(--primary);
+}
+
+p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
